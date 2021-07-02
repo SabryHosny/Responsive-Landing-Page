@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <!--========================== Fav ICON ===========================-->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <!--========================== BOX ICONS ===========================-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!--========================== SWIPPER CSS  ===========================-->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!--========================== MAIN STYLE ===========================-->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--========================== HEADER NAV ===========================-->
+  <header>
+    <nav class="bd-container"> <a class="nav-logo" href="#">Travel</a>
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#home"> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#explore"> Explore</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations"> Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hotels"> Hotels</a></li>
+        </ul>
+      </div>
+      <div class="nav-toggle"> <i class="bx bx-menu"></i></div>
+    </nav>
+    <!---------- DARK THEME TOGGLE BUTTON -------------->
+  </header>
+  <!--************************* MAIN ****************************-->
+  <main class="main">
+    <!--========================== ISLANDS ===========================-->
+    <div class="swiper-container galler-top">
+      <div class="islands swiper-wrapper">
+        <!------------------ ISLAND 1 ------------------->
+        <div class="island swiper-slide"> <img class="island-bg" src="img/borabora.jpg" alt="">
+          <div class="content bd-container">
+            <div class="island-data">
+              <h2 class="subtitle">Ancient</h2>
+              <h1 class="title">Egypt</h1>
+              <p class="description">See the most epic ancient civiliztion on earth, journy to the past.</p><a
+                class="island-data-button" href="#">Explore <i class="bx bx-right-arrow-alt island-data-button-icon">
+                </i></a>
+            </div>
+            <div class="island-video">
+              <div class="island-video-show"><i class="bx bx-play-circle island-video-icon"></i></div>
+            </div>
+          </div>
+        </div>
+        <!------------------ ISLAND 2 ------------------->
+        <div class="island swiper-slide"> <img class="island-bg" src="img/bali.jpg" alt="">
+          <div class="content bd-container">
+            <div class="island-data">
+              <h2 class="subtitle">Islands</h2>
+              <h1 class="title">Bali</h1>
+              <p class="description">It is an Indonesian island known and beautiful for its lush active volcanic
+                mountains.</p><a class="island-data-button" href="#">Explore <i
+                  class="bx bx-right-arrow-alt island-data-button-icon"> </i></a>
+            </div>
+            <div class="island-video">
+              <div class="island-video-show"> <i class="bx bx-play-circle island-video-icon"></i></div>
+            </div>
+          </div>
+        </div>
+        <!------------------ ISLAND 3 ------------------->
+        <div class="island swiper-slide"> <img class="island-bg" src="img/palawan.jpg" alt="">
+          <div class="content bd-container">
+            <div class="island-data">
+              <h2 class="subtitle">Islands</h2>
+              <h1 class="title">Palawan</h1>
+              <p class="description">Also known as La Paragua, it is the largest island in the province of Palawan.</p>
+              <a class="island-data-button" href="#">Explore <i class="bx bx-right-arrow-alt island-data-button-icon">
+                </i></a>
+            </div>
+            <div class="island-video">
+              <div class="island-video-show"><i class="bx bx-play-circle island-video-icon"></i></div>
+            </div>
+          </div>
+        </div>
+        <!------------------ ISLAND POPUP VIDEO ------------------->
+        <div class="island-popup">
+          <!-- <iframe class="popup-video" src="https://www.youtube.com/embed/JrU6bsuNU7Y" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> -->
+          <video class="popup-video" autoplay="" loop="" muted="" controls>
+            <source src="video/smaple_video.mp4" type="video/mp4">
+          </video>
+          <div class="popup-close"><i class="popup-close-icon bx bx-x"> </i></div>
+        </div>
+      </div>
+    </div>
+    <!--========================== SWIPPER CONNTROLS ===========================-->
+    <div class="island-controls gallery-thumbs">
+      <div class="controls-container swiper-wrapper"><img class="swiper-slide" src="img/borabora.jpg" alt=""><img
+          class="swiper-slide" src="img/bali.jpg" alt=""><img class="swiper-slide" src="img/palawan.jpg" alt=""></div>
+    </div>
+    <!--========================== SCROLL UP ===========================--><a class="scrollup" id="scrollup" href="#">
+      <i class="ri-arrow-up-line scrollup-icon"> </i></a>
+  </main>
+  <!--========================== SCRIPTS ===========================-->
+  <script src="js/gsap.min.js"> </script>
+  <script src="js/jquery.js"> </script>
+  <script src="js/swiper-bundle.min.js"> </script>
+  <script src="js/scrollreveal.min.js"></script>
+  <script src="js/main.js"> </script>
+</body>
+
+</html>
